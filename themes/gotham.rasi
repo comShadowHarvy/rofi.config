@@ -28,6 +28,7 @@
     active-background:           @background;
     selected-active-background:  @blue;
 }
+
 #window {
     background-color: @background;
     border:           1;
@@ -112,11 +113,6 @@
     background-color: @selected-normal-background;
     text-color:       @selected-normal-foreground;
 }
-#inputbar {
-    spacing:    0;
-    text-color: @normal-foreground;
-    padding:    1px ;
-}
 #case-indicator {
     spacing:    0;
     text-color: @normal-foreground;
@@ -127,5 +123,17 @@
 }
 #prompt {
     spacing:    0;
+    text-color: @normal-foreground;
+}
+#inputbar {
+    spacing:    0;
+    text-color: @normal-foreground;
+    padding:    1px ;
+    children:   [ prompt,textbox-prompt-separator,entry,case-indicator ];
+}
+#textbox-prompt-separator {
+    expand:     false;
+    str:        ">";
+    margin:     0px 0.3em 0em 0.3em ;
     text-color: @normal-foreground;
 }
