@@ -1,5 +1,5 @@
-rofi.lines:	5
-rofi.font: Homespun TT BRK 32
-rofi.width: 25
+rofi.lines:	9
+rofi.font: Homespun TT BRK 19
+rofi.width: 42
 rofi.hide-scrollbar:	true
 rofi.separator-style:	solid
